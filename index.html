@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open PDF</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .pdf-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background: #2d7ff9;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .pdf-btn:hover {
+            background: #0d66d0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        
+        .pdf-btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <button class="pdf-btn" onclick="openPDF()">Open PDF</button>
+
+    <script>
+        function openPDF() {
+            // REPLACE WITH YOUR ACTUAL PDF URL
+            const pdfUrl = 'https://your-username.github.io/your-repo-name/your-file.pdf';
+            
+            // Open in new tab
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
